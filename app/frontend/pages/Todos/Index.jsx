@@ -46,6 +46,9 @@ const TodosIndex = ({todos}) => {
 
       </form>
 
+      <div id="dialog" data-controller="inertia" data-page="{}" />
+
+
       {todos.map((todo) =>
         <Todo todo={todo} key={todo.id}/>
       )}
