@@ -1,24 +1,18 @@
-# README
+# Inertia Rails Todo List
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![img.png](img.png)
 
-Things you may want to cover:
+## Techs
 
-* Ruby version
+- Rails
+- React
+- Vite
+- Inertia
 
-* System dependencies
+## How to run
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Clone the repo
+2. Run `bundle install`
+3. Run `yarn install`
+4. Run `rails db:setup`
+5. Run `./bin/dev`
