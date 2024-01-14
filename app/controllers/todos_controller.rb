@@ -10,6 +10,10 @@ class TodosController < ApplicationController
     }
   end
 
+  def frames
+    flash[:target_frame] = "teste"
+    render inertia: 'Todos/Frames'
+  end
   # GET /todos/1 or /todos/1.json
   def show
   end

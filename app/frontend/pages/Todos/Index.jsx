@@ -1,6 +1,6 @@
 import React from "react";
 import Todo from "../../components/Todo";
-import {useForm} from "@inertiajs/react";
+import {useForm, Frame} from "@inertiajs/react";
 
 const TodosIndex = ({todos}) => {
 
@@ -45,6 +45,10 @@ const TodosIndex = ({todos}) => {
         </div>
 
       </form>
+
+      <Frame src="/frames" id="teste">
+        Loading...
+      </Frame>
 
       {todos.map((todo) =>
         <Todo todo={todo} key={todo.id}/>
