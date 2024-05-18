@@ -10,7 +10,7 @@
   "dependencies": {
     "@inertiajs/react": "^1.0.9",
     "inertiajs": "^0.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^19.0.0-beta",
+    "react-dom": "^19.0.0-beta"
   }
 }
