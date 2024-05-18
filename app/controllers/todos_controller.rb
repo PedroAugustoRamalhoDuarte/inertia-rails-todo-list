@@ -12,6 +12,9 @@ class TodosController < ApplicationController
 
   # GET /todos/1 or /todos/1.json
   def show
+    render inertia: 'Todos/Show', props: {
+      todo: @todo,
+    }
   end
 
   # GET /todos/new
