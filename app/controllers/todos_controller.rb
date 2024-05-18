@@ -4,12 +4,12 @@ class TodosController < ApplicationController
   # GET /todos or /todos.json
   def index
     @todos = Todo.all
-    render inertia: "Todos/Index", props: { todos: @todos }
+    render inertia: "Todos/Index", props: { todos: serialize(@todos, TodoSerializer) }
   end
 
   # GET /todos/1 or /todos/1.json
   def show
-    render inertia: "Todos/Show", props: { todo: @todo }
+    render inertia: "Todos/Show", props: { todo: serialize(@todo, TodoSerializer) }
   end
 
   # GET /todos/new
