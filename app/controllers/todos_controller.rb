@@ -1,5 +1,5 @@
 class TodosController < ApplicationController
-  before_action :set_todo, only: [:show, :edit, :update, :destroy]
+  before_action :set_todo, only: [:show, :update, :destroy]
 
   # GET /todos or /todos.json
   def index
@@ -11,14 +11,6 @@ class TodosController < ApplicationController
   def show
     render inertia: "Todos/Show", props: { todo: serialize(@todo, TodoSerializer) }
   end
-
-  # GET /todos/new
-  def new
-    @todo = Todo.new
-  end
-
-  # GET /todos/1/edit
-  def edit; end
 
   # POST /todos or /todos.json
   def create
@@ -33,14 +25,10 @@ class TodosController < ApplicationController
 
   # PATCH/PUT /todos/1 or /todos/1.json
   def update
-    respond_to do |format|
-      if @todo.update(todo_params)
-        format.html { redirect_to todo_url(@todo), notice: "Todo was successfully updated." }
-        format.json { render :show, status: :ok, location: @todo }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @todo.errors, status: :unprocessable_entity }
-      end
+    if @todo.update(todo_params)
+      redirect_to todos_url(@todo), notice: "Todo was successfully edited."
+    else
+      redirect_to todos_url(@todo), inertia: { errors: { name: "Nome inválido" } }
     end
   end
 
