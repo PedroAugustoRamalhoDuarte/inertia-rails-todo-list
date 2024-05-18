@@ -1,20 +1,16 @@
 class TodosController < ApplicationController
-  before_action :set_todo, only: %i[ show edit update destroy ]
+  before_action :set_todo, only: [:show, :edit, :update, :destroy]
   skip_before_action :verify_authenticity_token, if: -> { request.inertia? }
 
   # GET /todos or /todos.json
   def index
     @todos = Todo.all
-    render inertia: 'Todos/Index', props: {
-      todos: @todos,
-    }
+    render inertia: "Todos/Index", props: { todos: @todos }
   end
 
   # GET /todos/1 or /todos/1.json
   def show
-    render inertia: 'Todos/Show', props: {
-      todo: @todo,
-    }
+    render inertia: "Todos/Show", props: { todo: @todo }
   end
 
   # GET /todos/new
@@ -23,8 +19,7 @@ class TodosController < ApplicationController
   end
 
   # GET /todos/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /todos or /todos.json
   def create

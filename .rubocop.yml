@@ -1,0 +1,12 @@
+inherit_gem:
+  switchcop: rubocop.yml
+
+# Ruby 3.4 by default froozen string
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+
+Rails/I18nLocaleTexts:
+  Enabled: false
+
+Rails/UniqueValidationWithoutIndex:
+  Enabled: false
