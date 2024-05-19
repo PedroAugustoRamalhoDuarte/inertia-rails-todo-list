@@ -1,14 +1,15 @@
-import React, {useState} from "react";
+import {useState, ReactNode} from "react";
 import {Link, useForm} from "@inertiajs/react";
+import {TodoProps} from "../types/serializers";
 
-const Todo = ({todo}) => {
+const Todo = ({todo}: { todo: TodoProps }): ReactNode => {
   const [editable, setEditable] = useState(false);
 
   const {data, setData, patch, processing, errors} = useForm({
     name: todo.name
   });
 
-  const submit = (e) => {
+  const submit = (e: any) => {
     e.preventDefault()
     patch(`/todos/${todo.id}`, {preserveState: true})
     setEditable(false);

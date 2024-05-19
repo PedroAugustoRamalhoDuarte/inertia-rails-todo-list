@@ -1,8 +1,8 @@
-import React from "react";
 import Todo from "../../components/Todo";
 import {useForm} from "@inertiajs/react";
+import TodoProps from "../../types/serializers/TodoProps";
 
-const TodosIndex = ({todos}) => {
+const TodosIndex = ({todos}: { todos: [TodoProps] }) => {
 
 
   const {data, setData, post, processing, errors} = useForm({
@@ -11,7 +11,7 @@ const TodosIndex = ({todos}) => {
 
   console.log(errors)
 
-  const submit = (e) => {
+  const submit = (e: any) => {
     e.preventDefault()
     post('/todos')
   }
