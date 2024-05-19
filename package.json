@@ -1,8 +1,11 @@
 {
   "devDependencies": {
+    "@types/react": "npm:types-react@beta",
+    "@types/react-dom": "npm:types-react-dom@beta",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
+    "typescript": "^5.4.5",
     "vite": "^5.0.0",
     "vite-plugin-rails": "^0.1.0",
     "vite-plugin-ruby": "^5.0.0"
@@ -12,5 +15,9 @@
     "inertiajs": "^0.0.0",
     "react": "^19.0.0-beta",
     "react-dom": "^19.0.0-beta"
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@beta",
+    "@types/react-dom": "npm:types-react-dom@beta"
   }
 }

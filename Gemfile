@@ -46,3 +46,5 @@ gem "vite_rails"
 gem "inertia_rails"
 
 gem "panko_serializer"
+
+gem "types_from_serializers"

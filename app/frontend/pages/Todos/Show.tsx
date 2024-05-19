@@ -1,6 +1,6 @@
-import React from "react";
+import {TodoProps} from "../../types/serializers";
 
-const TodosShow = ({todo}) => {
+const TodosShow = ({todo}: { todo: TodoProps }) => {
 
   return (
     <div className="container px-4 mx-auto pt-26">
