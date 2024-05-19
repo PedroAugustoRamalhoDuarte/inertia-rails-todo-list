@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require "active_support/concern"
 
 # Internal: A DSL to specify types for serializer attributes.
@@ -31,7 +29,7 @@ module TypesFromSerializers
       end
 
       def prepare_attributes(transform_keys: nil, sort_by: nil)
-        attributes = send("_descriptor").attributes.to_h do |attribute|
+        attributes = send(:_descriptor).attributes.to_h do |attribute|
           [
             attribute.name.to_sym,
             {
@@ -42,7 +40,7 @@ module TypesFromSerializers
           ]
         end
 
-        one_association_attributes = send("_descriptor").has_one_associations.to_h do |association|
+        one_association_attributes = send(:_descriptor).has_one_associations.to_h do |association|
           [
             association.name_sym,
             {
@@ -52,10 +50,9 @@ module TypesFromSerializers
               identifier: false,
             },
           ]
-
         end
 
-        many_association_attributes = send("_descriptor").has_many_associations.to_h do |association|
+        many_association_attributes = send(:_descriptor).has_many_associations.to_h do |association|
           [
             association.name_sym,
             {
