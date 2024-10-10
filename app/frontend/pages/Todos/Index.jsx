@@ -1,6 +1,6 @@
 import React from "react";
 import Todo from "../../components/Todo";
-import {useForm} from "@inertiajs/react";
+import {Deferred, useForm, usePage} from "@inertiajs/react";
 
 const TodosIndex = ({todos}) => {
 
@@ -23,6 +23,10 @@ const TodosIndex = ({todos}) => {
           Minha lista de tarefas
         </h1>
       </div>
+
+      <Deferred data="todos_count" fallback="Loading...">
+        <TodoDashboardCard/>
+      </Deferred>
 
 
       <form method="post" onSubmit={submit}>
@@ -50,6 +54,19 @@ const TodosIndex = ({todos}) => {
         <Todo todo={todo} key={todo.id}/>
       )}
 
+    </div>
+  )
+}
+
+
+const TodoDashboardCard = () => {
+  const todosCount = usePage().props.todos_count;
+  console.log(todosCount)
+  return (
+    <div className="flex justify-between border-2 border-handwrite border-black mt-5 p-3">
+      <div className="flex flex-col">
+        Quantidade de total de Tarefas: {todosCount}
+      </div>
     </div>
   )
 }
