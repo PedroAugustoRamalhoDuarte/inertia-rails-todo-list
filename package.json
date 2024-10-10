@@ -8,8 +8,7 @@
     "vite-plugin-ruby": "^5.0.0"
   },
   "dependencies": {
-    "@inertiajs/react": "^1.0.9",
-    "inertiajs": "^0.0.0",
+    "@inertiajs/react": "v2.0.0-beta.1",
     "react": "^19.0.0-beta",
     "react-dom": "^19.0.0-beta"
   }

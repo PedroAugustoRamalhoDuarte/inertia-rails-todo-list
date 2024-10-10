@@ -122,22 +122,22 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.20.2.tgz#9c907b21e30a52db959ba4f80bb01a0cc403d5cc"
   integrity sha512-N49X4lJX27+l9jbLKSqZ6bKNjzQvHaT8IIFUy+YIqmXQdjYCToGWwOItDrfby14c78aDd5NHQl29xingXfCdLQ==
 
-"@inertiajs/core@1.0.16":
-  version "1.0.16"
-  resolved "https://registry.yarnpkg.com/@inertiajs/core/-/core-1.0.16.tgz#73484ca175464aadb6fe053b393b9829cd4f44d2"
-  integrity sha512-j0nS1KwNv2aNSC10u3qfOswhSMcHSURypPlVSimyRrxKSdrLRmPidow06avunkLU6T7nI9oDXt71WOeO3wCLQg==
+"@inertiajs/core@2.0.0-beta.1":
+  version "2.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@inertiajs/core/-/core-2.0.0-beta.1.tgz#300baf7f703e2c5baacf1dde6de0f4135b0c200c"
+  integrity sha512-T36SqIxtcdiMbGPNeP3rpD7lF3IxKkGBLspX3+Or/7GRUgX4F1Q3ymZMSzTri1torfz4/T76GJPWqFQ/A8ro8g==
   dependencies:
     axios "^1.6.0"
     deepmerge "^4.0.0"
     nprogress "^0.2.0"
     qs "^6.9.0"
 
-"@inertiajs/react@^1.0.9":
-  version "1.0.16"
-  resolved "https://registry.yarnpkg.com/@inertiajs/react/-/react-1.0.16.tgz#f43defda956634e621ec47a500ab756791e97d84"
-  integrity sha512-+cWZ7yUbFHx7XcW8oSvitg7SYTAAS2WbgOrPe/18dPbWt1xNMdUgD/qh375FnO+PwLuM0fhmcze539B7LymOMw==
+"@inertiajs/react@v2.0.0-beta.1":
+  version "2.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@inertiajs/react/-/react-2.0.0-beta.1.tgz#942015dac6d3b909a0847b6d7807f3a32972fd3b"
+  integrity sha512-n1+1U0cWeFHXsJB2tQI3hTPgJFwTfuGFi7lWmWSrvRc5kDiRm44Xl/+0MgLc5ghfbBqyq/wj3kkwAdTZz/kBIg==
   dependencies:
-    "@inertiajs/core" "1.0.16"
+    "@inertiajs/core" "2.0.0-beta.1"
     lodash.isequal "^4.5.0"
 
 "@isaacs/cliui@^8.0.2":
@@ -699,11 +699,6 @@ hasown@^2.0.0:
   integrity sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==
   dependencies:
     function-bind "^1.1.2"
-
-inertiajs@^0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/inertiajs/-/inertiajs-0.0.0.tgz#9d348072c710036c6410836d4ebf874182455ee4"
-  integrity sha512-05qOEznlVy5Xd947NmMXVHZs2hrubclKlWW6lAKtJJflLW5cFwBuxZbJCZktoptiUHV34gCQN/+Rcawe2lx6kw==
 
 is-binary-path@~2.1.0:
   version "2.1.0"
