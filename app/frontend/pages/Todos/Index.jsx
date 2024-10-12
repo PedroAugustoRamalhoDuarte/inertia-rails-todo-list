@@ -1,15 +1,11 @@
 import React from "react";
 import Todo from "../../components/Todo";
-import {Deferred, useForm, usePage} from "@inertiajs/react";
+import {Deferred, useForm, usePage, WhenVisible} from "@inertiajs/react";
 
-const TodosIndex = ({todos}) => {
-
-
+const TodosIndex = ({todos, pagy}) => {
   const {data, setData, post, processing, errors} = useForm({
     name: ""
   });
-
-  console.log(errors)
 
   const submit = (e) => {
     e.preventDefault()
@@ -24,10 +20,9 @@ const TodosIndex = ({todos}) => {
         </h1>
       </div>
 
-      <Deferred data="todos_count" fallback="Loading...">
-        <TodoDashboardCard/>
-      </Deferred>
-
+      {/*<Deferred data="todos_count" fallback="Loading...">*/}
+      {/*  <TodoDashboardCard/>*/}
+      {/*</Deferred>*/}
 
       <form method="post" onSubmit={submit}>
         <div className="mb-4">
@@ -54,6 +49,13 @@ const TodosIndex = ({todos}) => {
         <Todo todo={todo} key={todo.id}/>
       )}
 
+      <WhenVisible fallback={"Loading..."} data={["todos", "pagy"]} params={{
+        data: {
+          teste: true,
+          page: pagy.page + 1,
+        },
+        preserveUrl: true,
+      }}/>
     </div>
   )
 }

@@ -3,10 +3,11 @@ class TodosController < ApplicationController
 
   # GET /todos or /todos.json
   def index
-    @todos = Todo.all
+    @pagy, @todos   = pagy(Todo.all)
     render inertia: "Todos/Index", props: {
-      todos: serialize(@todos, TodoSerializer),
-      todos_count: InertiaRails.defer(-> { sleep 5; Todo.count }),
+      todos: InertiaRails.merge(serialize(@todos, TodoSerializer)),
+      pagy: @pagy,
+      # todos_count: InertiaRails.defer(-> { sleep 5; Todo.count }),
     }
   end
 
