@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  include Pagy::Backend
+
   private
 
   def serialize(resource, serializer_class)

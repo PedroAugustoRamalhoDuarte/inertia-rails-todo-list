@@ -46,3 +46,5 @@ gem "vite_rails"
 gem "inertia_rails", github: "skryukov/inertia-rails", branch: "v2/all"
 
 gem "panko_serializer"
+
+gem "pagy"
