@@ -1,4 +1,4 @@
-import React from "react";
+import React, {StrictMode} from "react";
 import { createRoot } from "react-dom/client";
 import { createInertiaApp } from "@inertiajs/react";
 
@@ -11,7 +11,11 @@ createInertiaApp({
   setup({ el, App, props }) {
     const container = document.getElementById(el.id);
     const root = createRoot(container);
-    root.render(<App {...props} />);
+    root.render(
+      <StrictMode>
+        <App {...props} />
+      </StrictMode>
+    );
   },
 });
 
