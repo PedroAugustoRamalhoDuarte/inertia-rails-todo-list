@@ -34,9 +34,9 @@ const TodosIndex = ({todos, pagy}) => {
         </h1>
       </div>
 
-      {/*<Deferred data="todos_count" fallback="Loading...">*/}
-      {/*  <TodoDashboardCard/>*/}
-      {/*</Deferred>*/}
+      <Deferred data="todos_count" fallback="Loading...">
+        <TodoDashboardCard/>
+      </Deferred>
 
       <form method="post" onSubmit={submit}>
         <div className="mb-4">
