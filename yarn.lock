@@ -122,22 +122,22 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.20.2.tgz#9c907b21e30a52db959ba4f80bb01a0cc403d5cc"
   integrity sha512-N49X4lJX27+l9jbLKSqZ6bKNjzQvHaT8IIFUy+YIqmXQdjYCToGWwOItDrfby14c78aDd5NHQl29xingXfCdLQ==
 
-"@inertiajs/core@2.0.0-beta.1":
-  version "2.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@inertiajs/core/-/core-2.0.0-beta.1.tgz#300baf7f703e2c5baacf1dde6de0f4135b0c200c"
-  integrity sha512-T36SqIxtcdiMbGPNeP3rpD7lF3IxKkGBLspX3+Or/7GRUgX4F1Q3ymZMSzTri1torfz4/T76GJPWqFQ/A8ro8g==
+"@inertiajs/core@2.0.0-beta.2":
+  version "2.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@inertiajs/core/-/core-2.0.0-beta.2.tgz#27b06ab008aba520277736bf2a8a76654f032ed9"
+  integrity sha512-2fi1YAncmkQAGko+miQanobF5anSO9lBK8i6Fgl0YKDjLQJg7+Sdr/yQIDwJtvFYgOgDbAhIcAawn9usc0/9bQ==
   dependencies:
     axios "^1.6.0"
     deepmerge "^4.0.0"
     nprogress "^0.2.0"
     qs "^6.9.0"
 
-"@inertiajs/react@v2.0.0-beta.1":
-  version "2.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@inertiajs/react/-/react-2.0.0-beta.1.tgz#942015dac6d3b909a0847b6d7807f3a32972fd3b"
-  integrity sha512-n1+1U0cWeFHXsJB2tQI3hTPgJFwTfuGFi7lWmWSrvRc5kDiRm44Xl/+0MgLc5ghfbBqyq/wj3kkwAdTZz/kBIg==
+"@inertiajs/react@v2.0.0-beta.2":
+  version "2.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/@inertiajs/react/-/react-2.0.0-beta.2.tgz#8dffd30e82d306f307b2029d496a188fd226e502"
+  integrity sha512-Zm3hWYvA0GNEHaqt3CPUBNz5NFQnxopOiAdYZ4HKrR/upsptMNcJ+JBQ7r0Wvmk3xaq9cbO3JiH7RvXUDxItxQ==
   dependencies:
-    "@inertiajs/core" "2.0.0-beta.1"
+    "@inertiajs/core" "2.0.0-beta.2"
     lodash.isequal "^4.5.0"
 
 "@isaacs/cliui@^8.0.2":
@@ -1281,10 +1281,10 @@ vite-plugin-ruby@^3.1:
     debug "^4.3.4"
     fast-glob "^3.2.12"
 
-vite-plugin-ruby@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-ruby/-/vite-plugin-ruby-5.0.0.tgz#cd891198a7672f2e8402439f53ab9d2b08f6502d"
-  integrity sha512-c8PjTp21Ah/ttgnNUyu0qvCXZI08Jr9I24oUKg3TRIRhF5GcOZ++6wtlTCrNFd9COEQbpXHxlRIXd/MEg0iZJw==
+vite-plugin-ruby@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-ruby/-/vite-plugin-ruby-5.1.0.tgz#489f2071ea6d86b5db735ea1fbbbe10e50e8e9bc"
+  integrity sha512-Dgd/dCvb/8GYxZx2NEgxygEoUpHz9vfad7itlO4fXqYwdfAEwFwwOohC630yf/+kxIGBZXI5yk+Y3WkL9VkwcA==
   dependencies:
     debug "^4.3.4"
     fast-glob "^3.3.2"
