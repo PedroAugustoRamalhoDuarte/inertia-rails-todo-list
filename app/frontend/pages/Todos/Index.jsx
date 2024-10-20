@@ -1,15 +1,33 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Todo from "../../components/Todo";
 import {Deferred, useForm, usePage, WhenVisible} from "@inertiajs/react";
 
 const TodosIndex = ({todos, pagy}) => {
+  const [pagyState, setPagyState] = useState(pagy);
   const {data, setData, post, processing, errors} = useForm({
     name: ""
   });
 
+  useEffect(() => {
+    setPagyState(pagy);
+  }, [pagy]);
+
   const submit = (e) => {
     e.preventDefault()
     post('/todos')
+  }
+
+  const RenderWhenVisible = () => {
+    if (pagyState.page < pagyState.last) {
+      return (<WhenVisible fallback={"Loading..."} params={{
+          data: {
+            page: pagyState.page + 1,
+          },
+          only: ["todos", "pagy"],
+          preserveUrl: true,
+        }}/>
+      )
+    }
   }
 
   return (
@@ -49,13 +67,7 @@ const TodosIndex = ({todos, pagy}) => {
         <Todo todo={todo} key={todo.id}/>
       )}
 
-      <WhenVisible fallback={"Loading..."} data={["todos", "pagy"]} params={{
-        data: {
-          teste: true,
-          page: pagy.page + 1,
-        },
-        preserveUrl: true,
-      }}/>
+      <RenderWhenVisible/>
     </div>
   )
 }
