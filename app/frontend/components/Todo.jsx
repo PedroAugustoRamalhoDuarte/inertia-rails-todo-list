@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Link, useForm} from "@inertiajs/react";
 
-const Todo = ({todo}) => {
+const Todo = ({todo, pending = false}) => {
   const [editable, setEditable] = useState(false);
 
   const {data, setData, patch, processing, errors} = useForm({
@@ -14,8 +14,10 @@ const Todo = ({todo}) => {
     setEditable(false);
   }
 
+  const divClassName = pending ? "flex justify-between border-2 border-handwrite border-black mt-5 p-3 opacity-50 animate-pulse" : "flex justify-between border-2 border-handwrite border-black mt-5 p-3";
+
   return (
-    <div className="flex justify-between border-2 border-handwrite border-black mt-5 p-3">
+    <div className={divClassName}>
       <div className="flex flex-col">
         {editable ? (
             <form method="patch" className="flex flex-row" onSubmit={submit}>

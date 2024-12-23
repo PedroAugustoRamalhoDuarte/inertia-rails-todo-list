@@ -4,7 +4,7 @@ class TodosController < ApplicationController
   # GET /todos or /todos.json
   def index
     @pagy, @todos = pagy(Todo.all, limit: 10)
-    render inertia: "Todos/Index", props: {
+    render inertia: "Todos/IndexV2", props: {
       todos: InertiaRails.merge { serialize(@todos, TodoSerializer) },
       pagy: @pagy,
       todos_count: InertiaRails.defer do
@@ -21,6 +21,7 @@ class TodosController < ApplicationController
 
   # POST /todos or /todos.json
   def create
+    sleep 3;
     @todo = Todo.new(todo_params)
 
     if @todo.save
