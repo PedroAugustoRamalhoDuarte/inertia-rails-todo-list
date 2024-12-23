@@ -21,22 +21,21 @@ class TodosController < ApplicationController
 
   # POST /todos or /todos.json
   def create
-    sleep 3;
     @todo = Todo.new(todo_params)
 
     if @todo.save
-      redirect_to todos_url(@todo), notice: "Todo was successfully created."
+      redirect_to todos_url, notice: "Todo was successfully created."
     else
-      redirect_to todos_url(@todo), inertia: { errors: { name: "Nome inválido" } }
+      redirect_to todos_url, inertia: { errors: { name: "Nome inválido" } }
     end
   end
 
   # PATCH/PUT /todos/1 or /todos/1.json
   def update
     if @todo.update(todo_params)
-      redirect_to todos_url(@todo), notice: "Todo was successfully edited."
+      redirect_to todos_url, notice: "Todo was successfully edited."
     else
-      redirect_to todos_url(@todo), inertia: { errors: { name: "Nome inválido" } }
+      redirect_to todos_url, inertia: { errors: { name: "Nome inválido" } }
     end
   end
 

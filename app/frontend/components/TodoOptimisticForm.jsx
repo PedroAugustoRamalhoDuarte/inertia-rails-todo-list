@@ -1,6 +1,7 @@
 import React from "react";
 import {useForm} from "@inertiajs/react";
 
+// https://x.com/adamwathan/status/1797219806795501649
 const TodoOptimisticForm = ({onAddTodo}) => {
   const {data, setData, post, processing, errors, reset} = useForm({
     name: ""
