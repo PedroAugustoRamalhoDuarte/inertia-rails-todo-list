@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {Link, useForm} from "@inertiajs/react";
+import {clsx} from "clsx";
 
 const Todo = ({todo, pending = false}) => {
   const [editable, setEditable] = useState(false);
@@ -14,10 +15,9 @@ const Todo = ({todo, pending = false}) => {
     setEditable(false);
   }
 
-  const divClassName = pending ? "flex justify-between border-2 border-handwrite border-black mt-5 p-3 opacity-50 animate-pulse" : "flex justify-between border-2 border-handwrite border-black mt-5 p-3";
-
   return (
-    <div className={divClassName}>
+    <div
+      className={clsx("flex justify-between border-2 border-handwrite border-black mt-5 p-3", pending && "opacity-50 animate-pulse")}>
       <div className="flex flex-col">
         {editable ? (
             <form method="patch" className="flex flex-row" onSubmit={submit}>
