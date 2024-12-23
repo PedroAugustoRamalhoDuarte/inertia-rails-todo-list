@@ -122,22 +122,21 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.20.2.tgz#9c907b21e30a52db959ba4f80bb01a0cc403d5cc"
   integrity sha512-N49X4lJX27+l9jbLKSqZ6bKNjzQvHaT8IIFUy+YIqmXQdjYCToGWwOItDrfby14c78aDd5NHQl29xingXfCdLQ==
 
-"@inertiajs/core@2.0.0-beta.2":
-  version "2.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@inertiajs/core/-/core-2.0.0-beta.2.tgz#27b06ab008aba520277736bf2a8a76654f032ed9"
-  integrity sha512-2fi1YAncmkQAGko+miQanobF5anSO9lBK8i6Fgl0YKDjLQJg7+Sdr/yQIDwJtvFYgOgDbAhIcAawn9usc0/9bQ==
+"@inertiajs/core@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@inertiajs/core/-/core-2.0.0.tgz#0cb8df763fead54f57a70ad3c7fcba48d07557e8"
+  integrity sha512-2kvlk731NjwfXUku/ZoXsZNcOzx985icHtTC1dgN+8sAZtJfEg9QBrQ7sBjeLYiWtKgobJdwwpeDaexEneAtLQ==
   dependencies:
     axios "^1.6.0"
     deepmerge "^4.0.0"
-    nprogress "^0.2.0"
     qs "^6.9.0"
 
-"@inertiajs/react@v2.0.0-beta.2":
-  version "2.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@inertiajs/react/-/react-2.0.0-beta.2.tgz#8dffd30e82d306f307b2029d496a188fd226e502"
-  integrity sha512-Zm3hWYvA0GNEHaqt3CPUBNz5NFQnxopOiAdYZ4HKrR/upsptMNcJ+JBQ7r0Wvmk3xaq9cbO3JiH7RvXUDxItxQ==
+"@inertiajs/react@v2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@inertiajs/react/-/react-2.0.0.tgz#6e0477e8ea7e038a508bb1e3779d43ee2280fa2d"
+  integrity sha512-7X6TMYe7FcjG05UjRBkPYjTw/U+CrMeVDxxRolncuNYp6LmifPs1xOjTOC5M7gbpKaDEL/LuxNAX7ePJC3cbPg==
   dependencies:
-    "@inertiajs/core" "2.0.0-beta.2"
+    "@inertiajs/core" "2.0.0"
     lodash.isequal "^4.5.0"
 
 "@isaacs/cliui@^8.0.2":
@@ -851,11 +850,6 @@ normalize-range@^0.1.2:
   resolved "https://registry.yarnpkg.com/normalize-range/-/normalize-range-0.1.2.tgz#2d10c06bdfd312ea9777695a4d28439456b75942"
   integrity sha512-bdok/XvKII3nUpklnV6P2hxtMNrCboOjAcyBuQnWEhO665FwrSNRxU+AqpsyvO6LgGYPspN+lu5CLtw4jPRKNA==
 
-nprogress@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
-  integrity sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==
-
 object-assign@^4.0.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
@@ -979,17 +973,17 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-react-dom@^19.0.0-beta:
-  version "19.0.0-rc-915b914b3a-20240515"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.0.0-rc-915b914b3a-20240515.tgz#01d92b86fe37aa673da22fdd789ed24ff1248026"
-  integrity sha512-Njv9p2b7/3ZEk7hcWAzgxbLfYbYJfI01bwI0V+a1WKbhhxwth1o2mQejIsUtnDwkXZ34Oej8rIY5Z93pUfSCdQ==
+react-dom@^19.0.0:
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.0.0.tgz#43446f1f01c65a4cd7f7588083e686a6726cfb57"
+  integrity sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==
   dependencies:
-    scheduler "0.25.0-rc-915b914b3a-20240515"
+    scheduler "^0.25.0"
 
-react@^19.0.0-beta:
-  version "19.0.0-rc-915b914b3a-20240515"
-  resolved "https://registry.yarnpkg.com/react/-/react-19.0.0-rc-915b914b3a-20240515.tgz#4542c3da2227de3f426d314e7065766de220a0af"
-  integrity sha512-/XKPm2pbDBheMbNUV/uRoL0/RZXg+CCyen3YBjDetySqGZjsRBQKKtK9sWMjQO8J6y8PoC02HzjAP4/OQ2Wmow==
+react@^19.0.0:
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-19.0.0.tgz#6e1969251b9f108870aa4bff37a0ce9ddfaaabdd"
+  integrity sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==
 
 read-cache@^1.0.0:
   version "1.0.0"
@@ -1056,10 +1050,10 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-scheduler@0.25.0-rc-915b914b3a-20240515:
-  version "0.25.0-rc-915b914b3a-20240515"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.25.0-rc-915b914b3a-20240515.tgz#31e542d20dcdf4e71c00379318314e34b1a0fa5a"
-  integrity sha512-NeqcaiiRfnXjrrtI8CxyU9FlT9UTdRvpSCy/fnAK+hwwrMjk6BhtCmdziCOkCat5bI3p6uUIwR2NNCK2F/1bZg==
+scheduler@^0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.25.0.tgz#336cd9768e8cceebf52d3c80e3dcf5de23e7e015"
+  integrity sha512-xFVuu11jh+xcO7JOAGJNOXld8/TcEHK/4CituBUeUb5hqxJLj9YuemAEuvm9gQ/+pgXYfbQuqAkiYu+u7YEsNA==
 
 set-function-length@^1.2.1:
   version "1.2.2"

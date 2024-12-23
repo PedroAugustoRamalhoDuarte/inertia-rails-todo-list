@@ -1,4 +1,9 @@
 {
+  "dependencies": {
+    "@inertiajs/react": "v2.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.27",
@@ -6,10 +11,5 @@
     "vite": "^5.0.0",
     "vite-plugin-rails": "^0.1.0",
     "vite-plugin-ruby": "^5.1.0"
-  },
-  "dependencies": {
-    "@inertiajs/react": "v2.0.0-beta.2",
-    "react": "^19.0.0-beta",
-    "react-dom": "^19.0.0-beta"
   }
 }
