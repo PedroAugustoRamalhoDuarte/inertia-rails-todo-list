@@ -7,7 +7,10 @@ class TodosController < ApplicationController
     render inertia: "Todos/Index", props: {
       todos: InertiaRails.merge(serialize(@todos, TodoSerializer)),
       pagy: @pagy,
-      todos_count: InertiaRails.defer(-> { sleep 5; Todo.count }),
+      todos_count: InertiaRails.defer(-> {
+        sleep 5
+        Todo.count
+      }),
     }
   end
 

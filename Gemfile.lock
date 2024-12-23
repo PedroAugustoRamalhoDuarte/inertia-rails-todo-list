@@ -158,6 +158,8 @@ GEM
     nokogiri (1.17.2)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
+    nokogiri (1.17.2-x86_64-linux)
+      racc (~> 1.4)
     oj (3.16.8)
       bigdecimal (>= 3.0)
       ostruct (>= 0.2)
@@ -282,6 +284,7 @@ GEM
     simplecov_json_formatter (0.1.4)
     sqlite3 (2.4.1)
       mini_portile2 (~> 2.8.0)
+    sqlite3 (2.4.1-x86_64-linux-gnu)
     sshkit (1.23.2)
       base64
       net-scp (>= 1.1.2)
@@ -352,8 +355,5 @@ DEPENDENCIES
   vite_rails
   web-console
 
-RUBY VERSION
-   ruby 3.4.0.preview1
-
 BUNDLED WITH
-   2.6.0.dev
+   2.5.22
