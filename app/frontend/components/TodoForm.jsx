@@ -2,12 +2,13 @@ import React from "react";
 import { useForm } from "@inertiajs/react";
 
 const TodoForm = () => {
-  const { data, setData, post, processing, errors } = useForm({
+  const { data, setData, post, processing, errors, reset } = useForm({
     name: ""
   });
 
   const submit = (e) => {
     e.preventDefault();
+    reset();
     post('/todos');
   };
 
