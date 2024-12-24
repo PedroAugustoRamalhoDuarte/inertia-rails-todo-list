@@ -9,7 +9,9 @@ const TodoForm = () => {
   const submit = (e) => {
     e.preventDefault();
     reset();
-    post('/todos');
+    post('/todos', {
+      // only: ["todos", "pagy"] TODO: How to
+    });
   };
 
   return (

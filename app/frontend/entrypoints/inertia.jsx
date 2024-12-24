@@ -5,8 +5,7 @@ import { createInertiaApp } from "@inertiajs/react";
 createInertiaApp({
   resolve: async (name) => {
     const pages = import.meta.glob("../pages/**/*.jsx", { eager: true });
-    let page = pages[`../pages/${name}.jsx`];
-    return page;
+    return pages[`../pages/${name}.jsx`];
   },
   setup({ el, App, props }) {
     const container = document.getElementById(el.id);
