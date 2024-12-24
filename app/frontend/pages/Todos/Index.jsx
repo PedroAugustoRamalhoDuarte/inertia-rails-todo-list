@@ -23,7 +23,7 @@ const TodosIndex = ({ todos, pagy }) => {
   };
 
   return (
-    <div className="container px-4 mx-auto pt-26">
+    <div className="container px-4 mx-auto pt-12 md:pt-26">
       <div className="flex justify-between">
         <h1 className="text-3xl font-bold underline">Minha lista de tarefas</h1>
       </div>
